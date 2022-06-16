@@ -1,0 +1,75 @@
+.form-profile {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+  }
+  .form-subtitle{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: $color-blue;
+  }
+  span{
+    font-size: 0.7rem;
+    font-weight: bolder;
+    margin:0 5px;
+    color: $color-green;
+  }
+  .form-profile__name,
+  .form-profile__occupation,
+  .form-profile__description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    p {
+      color: $color-blue;
+      margin: 0 10px;
+      font-weight: bolder;
+    }
+    input {
+      width: 50%;
+      border-radius: 10px;
+      border: 1px solid $color-blue;
+      padding: 5px;
+      &:focus {
+        outline-color: $color-green;
+      }
+    }
+  }
+  .form-btns {
+    display: flex;
+    margin: 30px 0 0 0;
+  }
+  .form-guardar__btn, .form-cancelar__btn {
+    border-radius: 10px;
+    margin: 20px 10px;
+    border: none;
+    padding: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    &:focus {
+      outline-color: $color-green;
+    }
+  }
+  .form-guardar__btn{
+    background: linear-gradient(180deg, $color-green, $color-blue);
+    color: white;
+  }
+  .form-cancelar__btn{
+    color: $color-blue;
+    border: 2px solid white;
+    &:hover {
+        border: 2px solid $color-orange;
+    }
+  }
+}

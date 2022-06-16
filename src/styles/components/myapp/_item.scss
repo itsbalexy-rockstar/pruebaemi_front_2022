@@ -1,0 +1,62 @@
+.item {
+  border-bottom: 1px dotted gray;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 10px;
+}
+.item-info {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+.item-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-green;
+  img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+}
+.item-info__user {
+  display: flex;
+  align-items: center;
+  .item-info__user-name {
+    font-size: 1rem;
+    font-weight: bolder;
+    margin: 0 5px;
+  }
+  .item-info__user-username {
+    font-size: 0.6rem;
+    color: gray;
+  }
+  span {
+    color: $color-blue;
+  }
+}
+.item-info__message {
+  span {
+    color: $color-blue;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+}
+.item-info__icons {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  i {
+    color: $color-green;
+    margin: 0 5px;
+    cursor: pointer;
+    span {
+      color: $color-blue;
+      margin: 0 2px;
+    }
+  }
+}

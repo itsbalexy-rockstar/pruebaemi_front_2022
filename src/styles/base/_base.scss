@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $color-blue;
+    font-family: $font-family-base;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.modal {
+    position: absolute;
+    background: $color-blue;
+    padding: 6px;
+    z-index: 5;
+    width: 80vw;
+    height: 50vh;
+    opacity: 1;
+    top: 40%;
+    left: 10%;
+    border-radius: 10px;
+    cursor: pointer;
+    .x {
+        position: absolute;
+        z-index: 6;
+        top: -8px;
+        right: -8px;
+        background: linear-gradient(180deg, $color-blue, $color-green);
+        border-radius: 50%;
+        border: 2px solid $color-blue;
+        i {
+            padding: 10px;
+            color: white
+        };
+    }
+}

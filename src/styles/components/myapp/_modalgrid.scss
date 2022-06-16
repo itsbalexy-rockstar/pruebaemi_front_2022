@@ -1,0 +1,41 @@
+// .modal-container {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 100%;
+//   height: 100%;
+//   z-index: 10;
+//   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+//     url(../../../../images/modal-bg.jpg);
+//   overflow: hidden;
+// }
+// .modal-photos {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 800px;
+//   height: 600px;
+//   z-index: 8;
+//   background-color: white;
+//   overflow: hidden;
+//   padding: 10px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   h1 {
+//     font-size: 2em;
+//     font-weight: bold;
+//     margin-bottom: 10px;
+//   }
+// }
+// .modal-grid {
+//   display: grid;
+//   grid-template-columns: repeat(5, 1fr);
+//   img {
+//     width: 200px;
+//     height: 200px;
+//   }
+// }

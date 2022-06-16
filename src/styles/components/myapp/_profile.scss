@@ -1,0 +1,113 @@
+span,
+p {
+  color: white;
+  font-size: 0.8rem;
+}
+.profile-container {
+  width: 100vw;
+  height: 100vh;
+}
+.navbar-container {
+  background-color: $color-blue;
+  height: 80px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.timer {
+  color: $color-orange;
+}
+.navbar-section {
+  grid-area: 1 / 1 / 2 / 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: white;
+  }
+}
+.navbar-section-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.navbar-section-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  span {
+    color: $color-green;
+    margin: 0 5px;
+  }
+}
+.navbar-profile {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+}
+.navbar-profile-image {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.navbar-btn {
+  width: 50px;
+  background-color: $color-blue;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+.bell {
+  color: $color-green;
+}
+
+input[class="toggle"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.toggle {
+  height: 21px;
+  width: 36px;
+  border-radius: 16px;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  border: 2px solid white;
+  background: $color-blue;
+  transition: all 0.2s ease;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 2.5px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+  }
+  &:checked {
+    border-color: $color-orange;
+    &:after {
+      background: $color-orange;
+      transform: translateX(16px);
+    }
+  }
+}
